@@ -13,10 +13,17 @@ const priceStyle = css`
 const cartStyles = css`
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  border: 1px solid #9d9d9d;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 1000px;
+  margin: auto;
 `;
 const cartItemStyles = css`
   margin-bottom: 20px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
 
   span {
     margin-left: 20px;

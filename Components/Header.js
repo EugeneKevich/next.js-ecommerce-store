@@ -45,7 +45,7 @@ const cartStyles = css`
   width: 500px;
 `;
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header css={headerStyles}>
       <div css={logoStyles}>
@@ -66,6 +66,7 @@ export default function Header() {
           <Link href="/cardshop">
             <Image src={cart} alt="" width="30px" height="30px" />
           </Link>
+          <p>props</p>
         </div>
       </div>
     </header>

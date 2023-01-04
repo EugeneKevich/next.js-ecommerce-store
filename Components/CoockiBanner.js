@@ -19,17 +19,18 @@ const bannerStyles = (Open) => css`
 `;
 
 export default function CookieBanner() {
-  const [bannerOpen, setBannerOpen] = useState(false);
+  const [bannerOpen, setBannerOpen] = useState(true);
 
   useEffect(() => {
     const initialValue = getLocalStorage('bannerOpen');
     if (initialValue === null) {
-      setBannerOpen(true);
+      setBannerOpen(false);
     }
   }, []);
 
   return (
     <div css={bannerStyles(bannerOpen)}>
+      {console.log('banner', bannerOpen)}
       <span>Accept our Cookie</span>
       <button
         onClick={() => {

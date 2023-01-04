@@ -8,13 +8,15 @@ import { getParsedCookies, setStringifiedCookies } from '../../utils/cookies';
 const cardProduct = css`
   display: flex;
   justify-content: space-around;
+  margin: auto;
   margin-top: 100px;
-  margin-bottom: 12%;
-`;
-const imageStyles = css`
   border: 1px solid #9d9d9d;
   border-radius: 20px;
   background-color: #fff;
+  width: 1200px;
+`;
+
+const imageStyles = css`
   padding-top: 20px;
 `;
 
@@ -22,9 +24,6 @@ const descriptionStyles = css`
   width: 400px;
   padding-left: 50px;
   height: 400px;
-  border: 1px solid #9d9d9d;
-  border-radius: 20px;
-  background-color: #fff;
 
   button {
     width: 30px;

@@ -3,9 +3,11 @@ import { css } from '@emotion/react';
 const footerStyles = css`
   border-top: 2px solid #ddd;
   height: 50px;
-  margin: 0;
-  padding: 0;
+  width: 100%;
+
+  padding: 30;
   bottom: 0;
+  position: fixed;
   background-color: #fff;
 `;
 export default function Footer() {
